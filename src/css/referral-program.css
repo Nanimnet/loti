@@ -1,0 +1,115 @@
+.referral-program {
+    border-block-end: thin solid;
+    display: grid;
+    grid-template-columns: minmax(auto, 1440px);
+    place-content: normal center;
+}
+
+.referral-program__grid {
+    column-gap: var(--lf-grid-inline-gutter);
+    display: grid;
+    grid-template-columns: repeat(var(--lf-grid-inline-columns), 1fr);
+    padding-inline: var(--lf-grid-inline-margin);
+}
+
+.referral-program__headline {
+    font-weight: 500;
+    grid-column: 1 / -1;
+    margin-block: unset;
+    text-transform: uppercase;
+}
+
+.referral-program__lockup {
+    block-size: 131px;
+    inline-size: 281px;
+}
+
+.referral-program__paragraph {
+    margin-block: unset;
+}
+
+@media (max-width: 895.9px) {
+    .referral-program__grid {
+        padding-block: 72px;
+    }
+
+    .referral-program__headline {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .referral-program__lockup {
+        grid-column: span 4;
+        margin-block-start: 32px;
+    }
+
+    .referral-program__content {
+        grid-column: span 4;
+        margin-block-start: 24px;
+    }
+
+    .referral-program__paragraph {
+        font-size: 18px;
+        line-height: 22px;
+        margin-block-end: 22px;
+    }
+
+    .referral-program__cta {
+        margin-block-start: 33px;
+    }
+}
+
+@media (min-width: 896px) {
+    .referral-program__grid {
+        padding-block: 83px 90px;
+    }
+
+    .referral-program__headline {
+        max-inline-size: 1200px;
+    }
+
+    .referral-program__lockup {
+        grid-column: span 2;
+        margin-block-start: 52px;
+    }
+
+    .referral-program__content {
+        grid-column: span 6;
+        margin-block-start: 40px;
+    }
+
+    .referral-program__paragraph {
+        font-size: 24px;
+        line-height: 29px;
+        margin-block-end: 29px;
+    }
+
+    .referral-program__cta {
+        inline-size: 232px;
+        margin-block-start: 33px;
+    }
+}
+
+@media (min-width: 896px) and (max-width: 1440px) {
+    .referral-program__headline {
+        font-size: calc(32px + (48 - 32) * ((100vw - 896px) / (1440 - 896)));
+        line-height: calc(38px + (58 - 38) * ((100vw - 896px) / (1440 - 896)));
+    }
+
+    .referral-program__paragraph {
+        font-size: calc(18px + (24 - 18) * ((100vw - 896px) / (1440 - 896)));
+        line-height: calc(22px + (29 - 22) * ((100vw - 896px) / (1440 - 896)));
+    }
+}
+
+@media (min-width: 1440px) {
+    .referral-program__headline {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .referral-program__paragraph {
+        font-size: 24px;
+        line-height: 29px;
+    }
+}

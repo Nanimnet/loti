@@ -1,0 +1,125 @@
+.leave-request {
+    background: hsl(0deg 0% 0% / 40%);
+    backdrop-filter: blur(30px);
+    display: grid;
+    grid-template-areas: 'content';
+    grid-template-columns: min(100%, 1072px);
+    place-content: center;
+    place-items: center;
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+}
+
+.leave-request--hidden {
+    display: none;
+}
+
+.leave-request__container {
+    box-sizing: border-box;
+    background: linear-gradient(0deg, #003980, #003980), #E3E3E3;
+    border-radius: 40px;
+    grid-area: content;
+    overflow: hidden;
+    position: relative;
+}
+
+.leave-request__headline {
+    font-weight: 500;
+    margin-block: unset;
+    text-transform: uppercase;
+}
+
+.leave-request__subheadline {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    margin-block-end: unset;
+    margin-block-start: 32px;
+}
+
+.leave-request__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.leave-request__field {
+    margin-block-end: 17px;
+}
+
+.leave-request__submit {
+    margin-block-start: 15px;
+}
+
+.leave-request__pattern {
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+.leave-request__close {
+    background-color: unset;
+    border-style: unset;
+    cursor: pointer;
+    padding: unset;
+    display: grid;
+    grid-area: content;
+    place-self: start end;
+}
+
+@media (max-width: 426px) {
+    .leave-request__container {
+        padding-block: 92px 74px;
+        padding-inline: 20px;
+    }
+
+    .leave-request__headline {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .leave-request__form {
+        margin-block-start: 17px;
+    }
+
+    .leave-request__pattern--desktop {
+        display: none;
+    }
+
+    .leave-request__close {
+        block-size: 18px;
+        inline-size: 18px;
+        margin-right: 26px;
+        transform: translateY(-17px) translateY(-100%);
+    }
+}
+
+@media (min-width: 426px) {
+    .leave-request__container {
+        padding-block: 92px;
+        padding-inline: 40px;
+        inline-size: 1072px;
+    }
+
+    .leave-request__headline {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .leave-request__form {
+        margin-block-start: 33px;
+        max-inline-size: 304px;
+    }
+
+    .leave-request__pattern--mobile {
+        display: none;
+    }
+
+    .leave-request__close {
+        block-size: 24px;
+        inline-size: 24px;
+        transform: translateX(10px) translateY(-10px) translateX(100%) translateY(-100%);
+    }
+}

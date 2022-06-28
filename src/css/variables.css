@@ -1,0 +1,15 @@
+@media (max-width: 895.9px) {
+    :root {
+        --lf-grid-inline-margin: 1.25rem;
+        --lf-grid-inline-gutter: 1rem;
+        --lf-grid-inline-columns: 4;
+    }
+}
+
+@media (min-width: 896px) {
+    :root {
+        --lf-grid-inline-margin: 3.25rem;
+        --lf-grid-inline-gutter: 2.5rem;
+        --lf-grid-inline-columns: 8;
+    }
+}

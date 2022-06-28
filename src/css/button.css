@@ -1,0 +1,57 @@
+.button {
+    border: thin solid transparent;
+    border-radius: 1.25rem;
+    display: flex;
+    font-family: unset;
+    font-weight: 400;
+    gap: 10px;
+    place-content: center;
+    place-items: center;
+}
+
+.button:any-link {
+    text-decoration: unset;
+}
+
+.button:enabled {
+    cursor: pointer;
+}
+
+.button:enabled:hover,
+.button:any-link:hover {
+    opacity: 90%;
+}
+
+.button:enabled:active,
+.button:any-link:active {
+    opacity: 80%;
+}
+
+.button_size_s {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 11px 18px;
+}
+
+.button_size_m {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 10px 17px;
+}
+
+.button_view_outline {
+    background-color: unset;
+    border-color: currentColor;
+    color: unset;
+}
+
+.button_view_blue {
+    background-color: #0074FF;
+    color: hsl(0deg 0% 100%);
+}
+
+.button_view_yellow {
+    background-color: hsl(46deg 100% 48%);
+    color: hsl(0deg 0% 0%);
+    text-align: center;
+}

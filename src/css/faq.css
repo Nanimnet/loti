@@ -1,0 +1,140 @@
+.faq {
+    display: grid;
+    grid-template-columns: minmax(auto, 1440px);
+    place-content: normal center;
+}
+
+.faq__grid {
+    column-gap: var(--lf-grid-inline-gutter);
+    display: grid;
+    grid-template-columns: repeat(var(--lf-grid-inline-columns), 1fr);
+    grid-template-rows: auto 1fr;
+    padding-inline: var(--lf-grid-inline-margin);
+}
+
+.faq__headline {
+    font-weight: 500;
+    grid-column: 1 / -1;
+    margin-block: unset;
+    text-transform: uppercase;
+}
+
+.faq__column {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 4;
+}
+
+.faq__card {
+    background: linear-gradient(0deg, #001D40, #001D40), radial-gradient(72.2% 217.64% at 126.5% 89.9%, rgba(0, 121, 255, 0.24) 0%, rgba(0, 42, 92, 0.725852) 43.59%, #000000 100%), #E3E3E3;
+    border-radius: 16px;
+}
+
+.faq__card-title {
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 500;
+    list-style-type: none;
+    line-height: 29px;
+    margin-inline-end: 54px;
+    position: relative;
+    outline: none;
+}
+
+.faq__card-title::marker {
+    display: none;
+}
+
+.faq__card-text {
+    font-size: 18px;
+    line-height: 27px;
+    margin-block: unset;
+}
+
+.faq__card-bubble {
+    background: radial-gradient(27.78% 27.78% at 50% 100%, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(89.49% 70.69% at 42.45% -24.07%, #000000 0%, rgba(0, 0, 0, 0.452061) 38.81%, rgba(0, 0, 0, 0) 100%), #0074FF;
+    border-radius: 100%;
+    box-shadow: inset 2px -3px 6px 1px rgba(255, 255, 255, 0.33);
+    block-size: 41px;
+    inline-size: 41px;
+    transform: rotate(-135deg);
+    position: absolute;
+    right: -60px;
+    top: -4px;
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+.faq__card-bubble>svg {
+    transition: transform 100ms ease-in-out;
+}
+
+.faq__card:not([open]) .faq__card-bubble>svg {
+    transform: rotate(-135deg);
+}
+
+@media (max-width: 895.9px) {
+    .faq__grid {
+        padding-block: 72px;
+    }
+
+    .faq__headline {
+        font-size: 32px;
+        grid-column: span 4;
+        line-height: 38px;
+        margin-block-end: 18px;
+    }
+
+    .faq__column {
+        row-gap: 15px;
+        margin-block-start: 15px;
+    }
+
+    .faq__card {
+        padding: 20px;
+        margin-inline: calc(-1 * var(--lf-grid-inline-margin));
+    }
+
+    .faq__card-text {
+        margin-block-start: 17px;
+    }
+}
+
+@media (min-width: 896px) {
+    .faq__grid {
+        padding-block: 84px 119px;
+    }
+
+    .faq__headline {
+        font-size: 48px;
+        line-height: 58px;
+        margin-block-end: 41px;
+    }
+
+    .faq__column {
+        row-gap: 31px;
+    }
+
+    .faq__card {
+        padding: 24px;
+    }
+
+    .faq__card-text {
+        margin-block-start: 24px;
+    }
+}
+
+@media (min-width: 896px) and (max-width: 1440px) {
+    .faq__headline {
+        font-size: calc(32px + (48 - 32) * ((100vw - 896px) / (1440 - 896)));
+        line-height: calc(38px + (58 - 38) * ((100vw - 896px) / (1440 - 896)));
+    }
+}
+
+@media (min-width: 1440px) {
+    .faq__headline {
+        font-size: 48px;
+        line-height: 58px;
+    }
+}

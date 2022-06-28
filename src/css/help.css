@@ -1,0 +1,128 @@
+.help {
+    display: grid;
+    grid-template-columns: minmax(auto, 1440px);
+    place-content: normal center;
+}
+
+.help__grid {
+    background-image: linear-gradient(0deg, hsl(213deg 100% 15%), hsl(213deg 100% 19%));
+    border-radius: 40px;
+    column-gap: var(--lf-grid-inline-gutter);
+    display: grid;
+    grid-template-columns: repeat(var(--lf-grid-inline-columns), 1fr);
+    overflow: hidden;
+    padding-inline: var(--lf-grid-inline-margin);
+    position: relative;
+}
+
+.help__headline {
+    font-weight: 500;
+    grid-column: 1 / -1;
+    margin-block: unset;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.help__subheadline {
+    grid-column: 1 / -1;
+    margin-block: unset;
+    z-index: 1;
+}
+
+.help__form {
+    display: flex;
+    grid-column: 1 / -1;
+    z-index: 1;
+}
+
+.help__pattern {
+    mix-blend-mode: difference;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+
+@media (max-width: 895.9px) {
+    .help__grid {
+        padding-block: 74px 72px;
+    }
+
+    .help__pattern--desktop {
+        display: none;
+    }
+
+    .help__headline {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .help__subheadline {
+        font-size: 22px;
+        line-height: 26px;
+        margin-block-start: 33px;
+    }
+
+    .help__form {
+        flex-direction: column;
+        margin-block-start: 17px;
+        row-gap: 18px;
+    }
+
+    .help__submit {
+        margin-block-start: 21px
+    }
+}
+
+@media (min-width: 896px) {
+    .help__grid {
+        padding-block: 92px 104px;
+    }
+
+    .help__pattern--mobile {
+        display: none;
+    }
+
+    .help__subheadline {
+        margin-block-start: 32px;
+    }
+
+    .help__form {
+        column-gap: 40px;
+        margin-block-start: 31px;
+    }
+
+    .help__field {
+        flex-grow: 1;
+        min-width: 0;
+    }
+
+    .help__submit {
+        inline-size: 304px;
+    }
+}
+
+@media (min-width: 896px) and (max-width: 1440px) {
+    .help__headline {
+        font-size: calc(32px + (48 - 32) * ((100vw - 896px) / (1440 - 896)));
+        line-height: calc(38px + (58 - 38) * ((100vw - 896px) / (1440 - 896)));
+    }
+
+    .help__subheadline {
+        font-size: calc(18px + (24 - 18) * ((100vw - 896px) / (1440 - 896)));
+        line-height: calc(22px + (29 - 22) * ((100vw - 896px) / (1440 - 896)));
+    }
+}
+
+@media (min-width: 1440px) {
+    .help__headline {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .help__subheadline {
+        font-size: 24px;
+        line-height: 29px;
+    }
+}

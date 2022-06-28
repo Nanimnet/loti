@@ -1,0 +1,178 @@
+.get-chance {
+    display: grid;
+    grid-template-columns: minmax(auto, 1440px);
+    place-content: normal center;
+}
+
+.get-chance__grid {
+    background: linear-gradient(0deg, hsl(213deg 100% 25% / 53%), hsl(213deg 100% 25% / 53%));
+    border-radius: 40px;
+    column-gap: var(--lf-grid-inline-gutter);
+    display: grid;
+    grid-template-columns: repeat(var(--lf-grid-inline-columns), 1fr);
+    overflow: hidden;
+    padding-inline: var(--lf-grid-inline-margin);
+    position: relative;
+}
+
+.get-chance__pattern {
+    opacity: 50%;
+    position: absolute;
+    pointer-events: none;
+    right: 0;
+}
+
+.get-chance__content {
+    grid-column: span 4;
+    z-index: 1;
+}
+
+.get-chance__headline {
+    font-weight: 500;
+    margin-block: unset;
+    text-transform: uppercase;
+}
+
+.get-chance__subheadline {
+    color: hsl(46deg 100% 48%);
+    font-weight: 400;
+    margin-block: unset;
+}
+
+.get-chance__costline {
+    margin-block-end: unset;
+    margin-block-start: 12px;
+}
+
+.get-chance__costline>span {
+    color: hsl(46deg 100% 48%);
+}
+
+.get-chance__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.get-chance__field {
+    margin-block-end: 18px;
+}
+
+.get-chance__field:nth-child(2) {
+    margin-block-start: -9px;
+}
+
+.get-chance__submit {
+    margin-block-start: 15px;
+}
+
+.get-chance__pool-countdown {
+    grid-column: span 4;
+    z-index: 1;
+}
+
+.get-chance__submit {
+    display: grid;
+}
+
+@media (max-width: 895.9px) {
+    .get-chance__pattern {
+        bottom: 162px;
+    }
+
+    .get-chance__pattern--desktop {
+        display: none;
+    }
+
+    .get-chance__grid {
+        padding-block: 73px 72px;
+    }
+
+    .get-chance__headline {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .get-chance__subheadline {
+        font-size: 22px;
+        line-height: 26px;
+        margin-block-start: 33px;
+    }
+
+    .get-chance__costline {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .get-chance__form {
+        margin-block-start: 17px;
+    }
+
+    .get-chance__pool-countdown {
+        margin-block-start: 40px;
+    }
+
+    .get-chance__submit {
+        row-gap: 16px;
+    }
+}
+
+@media (min-width: 896px) {
+    .get-chance__pattern {
+        bottom: -6px;
+    }
+
+    .get-chance__pattern--mobile {
+        display: none;
+    }
+
+    .get-chance__grid {
+        padding-block: 67px 72px;
+    }
+
+    .get-chance__subheadline {
+        margin-block-start: 32px;
+        margin-inline-end: -1px;
+    }
+
+    .get-chance__form {
+        margin-block-start: 36px;
+        max-inline-size: 477px;
+    }
+
+    .get-chance__submit {
+        column-gap: 16px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .get-chance__pool-countdown {
+        padding-inline: 4px;
+        place-self: center end;
+        margin-block-start: 3px;
+    }
+}
+
+@media (min-width: 896px) and (max-width: 1440px) {
+    .get-chance__headline {
+        font-size: calc(32px + (48 - 32) * ((100vw - 896px) / (1440 - 896)));
+        line-height: calc(38px + (58 - 38) * ((100vw - 896px) / (1440 - 896)));
+    }
+
+    .get-chance__subheadline,
+    .get-chance__costline {
+        font-size: calc(22px + (24 - 22) * ((100vw - 896px) / (1440 - 896)));
+        line-height: calc(26px + (29 - 26) * ((100vw - 896px) / (1440 - 896)));
+    }
+}
+
+@media (min-width: 1440px) {
+    .get-chance__headline {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .get-chance__subheadline,
+    .get-chance__costline {
+        font-size: 24px;
+        line-height: 29px;
+    }
+}

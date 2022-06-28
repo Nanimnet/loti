@@ -1,0 +1,112 @@
+.privacy {
+    border-block-end: thin solid;
+    display: grid;
+    grid-template-columns: minmax(auto, 1440px);
+    place-content: normal center;
+}
+
+.privacy__grid {
+    column-gap: var(--lf-grid-inline-gutter);
+    display: grid;
+    grid-template-columns: repeat(var(--lf-grid-inline-columns), 1fr);
+    grid-template-rows: auto 1fr;
+    padding-inline: var(--lf-grid-inline-margin);
+}
+
+.privacy__headline {
+    font-weight: 500;
+    margin-block: unset;
+    text-transform: uppercase;
+}
+
+.privacy__list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin-block-end: unset;
+    margin-block-start: 32px;
+    padding-inline-start: unset;
+    row-gap: 24px;
+}
+
+.privacy__list>li::before {
+    content: '-';
+    margin-inline-end: 10px;
+}
+
+@media (max-width: 895.9px) {
+    .privacy__grid {
+        padding-block: 72px 71px;
+    }
+
+    .privacy__headline {
+        font-size: 32px;
+        grid-column: span 4;
+        line-height: 38px;
+    }
+
+    .privacy__list {
+        font-size: 18px;
+        grid-column: span 4;
+        line-height: 22px;
+    }
+
+    .privacy__visual {
+        block-size: 224px;
+        grid-column: span 4;
+        inline-size: 235.91px;
+        margin-block-start: 30px;
+        place-self: center;
+    }
+}
+
+@media (min-width: 896px) {
+    .privacy__grid {
+        padding-block: 56px 41px;
+    }
+
+    .privacy__headline {
+        font-size: 48px;
+        grid-column: span 6;
+        line-height: 58px;
+        margin-block-start: 26px;
+    }
+
+    .privacy__list {
+        font-size: 24px;
+        grid-column: span 6;
+        line-height: 29px;
+    }
+
+    .privacy__visual {
+        block-size: 301px;
+        grid-column: -3 / span 2;
+        grid-row: 1 / span 2;
+        inline-size: 317px;
+        transform: translateX(13px);
+    }
+}
+
+@media (min-width: 896px) and (max-width: 1440px) {
+    .privacy__headline {
+        font-size: calc(32px + (48 - 32) * ((100vw - 896px) / (1440 - 896)));
+        line-height: calc(38px + (58 - 38) * ((100vw - 896px) / (1440 - 896)));
+    }
+
+    .privacy__list {
+        font-size: calc(18px + (24 - 18) * ((100vw - 896px) / (1440 - 896)));
+        line-height: calc(22px + (29 - 22) * ((100vw - 896px) / (1440 - 896)));
+    }
+}
+
+@media (min-width: 1440px) {
+    .privacy__headline {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .privacy__list {
+        font-size: 24px;
+        line-height: 29px;
+    }
+}

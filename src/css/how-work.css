@@ -1,0 +1,160 @@
+.how-work {
+    display: grid;
+    grid-template-columns: minmax(auto, 1440px);
+    place-content: normal center;
+}
+
+.how-work__grid {
+    column-gap: var(--lf-grid-inline-gutter);
+    display: grid;
+    grid-template-columns: repeat(var(--lf-grid-inline-columns), 1fr);
+    padding-inline: var(--lf-grid-inline-margin);
+}
+
+.how-work__headline {
+    font-weight: 500;
+    margin-block: unset;
+    text-transform: uppercase;
+}
+
+.how-work__subheadline {
+    color: hsl(46deg 100% 48%);
+    margin-block: unset;
+}
+
+.how-work__card {
+    background: linear-gradient(0deg, hsl(213deg 100% 13%), hsl(213deg 100% 13%)), radial-gradient(72.2% 217.64% at 126.5% 89.9%, hsl(212deg 100% 50% / 24%) 0%, hsl(213deg 100% 18% / 73%) 43.59%, hsl(0deg 0% 0%) 100%), hsl(0deg 0% 89% / 90%);
+    border-radius: 16px;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 12px;
+    position: relative;
+}
+
+.how-work__card::before {
+    background: radial-gradient(27.78% 27.78% at 50% 100%, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+        , radial-gradient(81.94% 64.52% at 50% 0%, #000000 0%, rgba(0, 0, 0, 0.452061) 38.81%, rgba(0, 0, 0, 0) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+        , #0074FF;
+    border-radius: 100%;
+    box-shadow: inset 2px -3px 6px 1px rgba(255, 255, 255, 0.33);
+    content: "";
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+.how-work__card:not(:last-of-type):after {
+    background-color: #AEAEAE;
+    content: "";
+    position: absolute;
+}
+
+@media (max-width: 895.9px) {
+    .how-work__grid {
+        padding-block: 73px 42px;
+    }
+
+    .how-work__headline {
+        font-size: 32px;
+        grid-column: span 4;
+        line-height: 38px;
+    }
+
+    .how-work__subheadline {
+        font-weight: 500;
+        font-size: 22px;
+        grid-column: span 4;
+        line-height: 26px;
+        margin-block-end: 24px;
+        margin-block-start: 33px;
+    }
+
+    .how-work__card {
+        grid-column: span 4;
+        margin-inline-start: 28px;
+        margin-block-end: 28px;
+    }
+
+    .how-work__card::before {
+        block-size: 28px;
+        inline-size: 28px;
+        top: 10px;
+        left: -28px;
+    }
+
+    .how-work__card:not(:last-of-type):after {
+        block-size: 100%;
+        inline-size: 3px;
+        left: -16px;
+        top: 38px;
+    }
+}
+
+@media (min-width: 896px) {
+    .how-work__grid {
+        padding-block: 72px 84px;
+    }
+
+    .how-work__headline {
+        font-size: 48px;
+        grid-column: 1 / -1;
+        line-height: 58px;
+        margin-inline-start: -4px;
+    }
+
+    .how-work__subheadline {
+        font-size: 24px;
+        font-weight: 400;
+        grid-column: 3 / -1;
+        line-height: 29px;
+        margin-block-end: 57px;
+        margin-block-start: 32px;
+        margin-inline-start: 4px;
+    }
+
+    .how-work__card {
+        grid-column: span 2;
+        margin-inline-start: 35px;
+        margin-inline-end: 12px;
+        place-self: start;
+    }
+
+    .how-work__card::before {
+        block-size: 36px;
+        inline-size: 36px;
+        top: 10px;
+        left: -36px;
+    }
+
+    .how-work__card:not(:last-of-type):after {
+        block-size: 3px;
+        inline-size: calc(var(--lf-grid-inline-gutter) + 12px);
+        right: calc(-1 * var(--lf-grid-inline-gutter) - 12px);
+        top: 25px;
+    }
+}
+
+@media (min-width: 896px) and (max-width: 1440px) {
+    .how-work__headline {
+        font-size: calc(32px + (48 - 32) * ((100vw - 896px) / (1440 - 896)));
+        line-height: calc(38px + (58 - 38) * ((100vw - 896px) / (1440 - 896)));
+    }
+
+    .how-work__subheadline {
+        font-size: calc(22px + (24 - 22) * ((100vw - 896px) / (1440 - 896)));
+        line-height: calc(26px + (29 - 26) * ((100vw - 896px) / (1440 - 896)));
+    }
+}
+
+@media (min-width: 1440px) {
+    .how-work__headline {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .how-work__subheadline {
+        font-size: 24px;
+        line-height: 29px;
+    }
+}

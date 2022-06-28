@@ -1,0 +1,38 @@
+<svg width="561" height="539" viewBox="0 0 561 539" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g style="mix-blend-mode:multiply" opacity="0.5">
+        <rect x="1.94629" y="329.978" width="559.054" height="209.022" fill="url(#pattern0)"/>
+    </g>
+    <rect x="51.1523" width="247.835" height="459.767" fill="url(#pattern1)"/>
+    <g style="mix-blend-mode:multiply">
+        <rect x="51.1514" y="1.22314" width="247.557" height="458.408" fill="url(#pattern2)"/>
+    </g>
+    <rect y="0.27179" width="259.233" height="507.062" fill="url(#pattern3)"/>
+    <mask id="mask0_181_328" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="8" y="11" width="229" height="485">
+        <path d="M66.3155 11.8351C63.2336 12.0662 60.5275 12.6337 58.1735 13.5431C53.0663 15.5157 48.8916 19.4507 46.2272 24.8029C44.0299 29.2173 42.9067 34.048 42.0559 42.7424C41.7465 45.9055 9.08213 432.096 8.82401 435.644C8.53155 439.663 8.53127 445.139 8.82345 447.604C9.81465 455.969 13.4999 462.441 19.4945 466.345C22.9464 468.592 26.7486 469.921 33.4991 471.241C36.2826 471.786 162.125 494.093 165.826 494.698C173.068 495.883 177.415 496.031 181.234 495.221C187.379 493.919 192.168 490.187 195.152 484.37C197.314 480.161 198.449 475.376 199.318 466.835C199.578 464.286 234.942 65.9087 235.879 54.9739C236.787 44.3961 236.749 39.5979 235.725 34.9375C234.175 27.8877 230.066 22.3773 224.217 19.5069C221.834 18.3373 218.938 17.4993 215.578 17.0071C211.953 16.4764 209.52 16.3447 193.547 15.8146C181.183 15.4041 181.849 15.3832 180.881 16.2144C180.438 16.5951 180.011 17.3514 179.821 18.094C179.771 18.2909 179.601 19.4223 179.445 20.6082C178.944 24.4345 178.312 26.3849 176.914 28.43C175.477 30.5305 173.77 31.9873 171.597 32.9687C170.266 33.5703 169.136 33.8288 167.425 33.9227C166.014 34.0001 112.899 31.9424 109.462 31.6772C107.359 31.5149 106.359 31.2868 105.014 30.6621C102.369 29.4336 100.473 27.1905 99.4805 24.1132C98.9443 22.4507 98.8231 21.1733 98.8623 17.6C98.898 14.3529 98.8966 14.3357 98.5559 13.754C97.9757 12.7631 97.5778 12.6139 95.163 12.4815C91.1619 12.262 72.6177 11.6865 70.1948 11.7061C68.857 11.7177 67.1113 11.7756 66.3155 11.8351Z" fill="white"/>
+    </mask>
+    <g mask="url(#mask0_181_328)">
+        <rect x="5.76562" y="10.1988" width="233.95" height="490.183" fill="url(#pattern4)"/>
+    </g>
+    <defs>
+        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_181_328" transform="scale(0.000994036 0.0025974)"/>
+        </pattern>
+        <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image1_181_328" transform="scale(0.00224215 0.00118203)"/>
+        </pattern>
+        <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image2_181_328" transform="scale(0.00224719 0.00118624)"/>
+        </pattern>
+        <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image3_181_328" transform="scale(0.00214592 0.00107296)"/>
+        </pattern>
+        <pattern id="pattern4" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image4_181_328" transform="translate(0 -0.0114967) scale(0.000792393 0.000378186)"/>
+        </pattern>
+        <image id="image0_181_328" width="1006" height="385" xlink:href="./buy-win-shadows.png"/>
+        <image id="image1_181_328" width="446" height="846" xlink:href="./buy-win-back.png"/>
+        <image id="image2_181_328" width="445" height="843" xlink:href="./buy-win-shade.png"/>
+        <image id="image3_181_328" width="466" height="932" xlink:href="./buy-win-front.png"/>
+        <image id="image4_181_328" width="1262" height="2705" xlink:href="./buy-win-screen.png"/>
+    </defs>
+</svg>
